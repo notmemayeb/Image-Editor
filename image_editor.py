@@ -8,7 +8,6 @@ def update_image(original, blur, contrast, emboss, contour, flipx, flipy):
 
 	image = original.filter(ImageFilter.GaussianBlur(blur))
 	image = image.filter(ImageFilter.UnsharpMask(contrast))
-	image = image.filter(ImageFilter.UnsharpMask(contrast))
 
 	if emboss:
 		image = image.filter(ImageFilter.EMBOSS())
